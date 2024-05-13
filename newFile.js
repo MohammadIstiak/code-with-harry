@@ -1,4 +1,0 @@
-alert(
-    " enter your password"
-
-);
