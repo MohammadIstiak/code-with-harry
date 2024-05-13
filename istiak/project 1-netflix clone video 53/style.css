@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&family=Poppins:wght@800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.main{
+    background-image: url(image/netflixteaser.png);
+    background-position: center center;
+    background-size: max(1150px, 100vw);
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    max-width: 80vw;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: 50px;
+}
+nav img{
+    color: red;
+    width: 75px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family:"Martel Sans", sans-serif;
+    height:  calc(90% - 58px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 5px;
+    padding: 0 15px;
+}
+.hero> :nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+}
+.separation{
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

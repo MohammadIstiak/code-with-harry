@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 433px;
+            width: 800px;
+            position: relative;
+            background-color: blue;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            border-radius: 70px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: red;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animatex 3s linear infinite ,
+            animatey 1s ease-out infinite alternate;
+        }
+        
+        @keyframes animatex {
+            from{
+              left: 0;
+            }
+            to{
+                left:90% ;
+            }
+        }
+         @keyframes animatey {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 77%;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+        </div>
+    </div>
+</body>
+</html>

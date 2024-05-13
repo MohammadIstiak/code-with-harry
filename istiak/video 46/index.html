@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color:rgb(164, 224, 224);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box{
+            height: 45px;
+            width: 34px;
+            /* background-color: aqua; */
+            /* animation: sam;
+            animation-duration: 1s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+             animation-delay: 1s; 
+            animation-direction:alternate-reverse;
+            animation-play-state:paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: sam 3s ease-in-out 3s 1 backwards, */
+            animation: sam 3s ease-in-out 3s 1,
+             sami 3s ease-in-out 3s 1;
+       }
+       @keyframes sam {
+        from{
+            background-color: red;
+          
+        }
+
+        to{
+            background-color: yellow;
+            transform: translate(90vw);
+           
+        }
+        
+       }
+       @keyframes sami {
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+        }
+        50%{
+            transform: rotate(240deg);
+        }
+        800%{
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(320deg);
+        }
+        
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
