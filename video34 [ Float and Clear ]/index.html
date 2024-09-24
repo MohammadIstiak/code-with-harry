@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear
+    </title>
+    <style>
+        /* dont use clear and float */
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: right;
+        }
+        .card:nth-child(3){
+            clear: right;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div class="card">card 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita assumenda praesentium earum culpa et sed eos nemo pariatur obcaecati, reprehenderit voluptas facere.</div>
+        <div class="card">card 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur nostrum odio fuga libero unde eaque fugiat, quo aut quam quae voluptas error dolorem ipsum, reiciendis soluta? Harum consectetur consequatur quam quisquam aliquam laboriosam sunt, quasi fugit quo ipsum tempora cupiditate. Natus provident optio nam quam molestiae fugit minus, molestias et voluptatum dolorem aut sint labore doloribus blanditiis aliquid consequuntur accusamus. Culpa saepe aspernatur ipsam laborum asperiores accusamus odit, in minima soluta, autem amet voluptates sed eum aliquam tenetur voluptatem recusandae voluptatibus delectus maxime inventore nihil! Molestiae temporibus voluptas, omnis neque culpa vel deleniti. Commodi amet dolor reiciendis numquam corrupti in, impedit nisi earum aut blanditiis. Consequuntur dolorum labore assumenda sit incidunt perspiciatis id vel rerum nihil accusamus facilis aspernatur, praesentium eos voluptatibus magni. Odit, consequuntur. Explicabo, nobis. Consequatur fugit quaerat dignissimos repellendus nam nisi laudantium adipisci, sapiente quo. Quasi, hic libero doloribus voluptatibus esse quibusdam omnis repudiandae commodi quo, praesentium tempora accusamus. Vel, possimus! Nesciunt accusantium commodi dolores, unde eligendi provident facilis consequatur quos dolorem praesentium natus at. Dolor, cumque dolores atque odio doloremque est quibusdam fugiat. Aspernatur voluptates exercitationem consectetur tempora ex fugiat excepturi debitis, itaque labore voluptatibus possimus, natus soluta sunt magni voluptatum vitae, eveniet dolorum dicta aut voluptatem totam recusandae aperiam. Tempore nobis voluptatum earum animi, recusandae aut adipisci enim esse perspiciatis consectetur, debitis inventore quidem repudiandae optio facilis. Natus rem ut culpa maxime minus iste consequatur deserunt dolore ratione.</div>
+        <div class="card">card 3</div>
+    </div>
+</body>
+</html>
